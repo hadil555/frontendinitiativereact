@@ -8,8 +8,10 @@ import Editcategorie from "./components/admin/categories/Editcategorie"
 import Listscategories from "./components/admin/scategories/Listscategories"
 import Menu from "./components/admin/Menu"
 import Editscategorie from "./components/admin/scategories/Editscategorie"
-import Inserscategorie from "./components/admin/scategories/Inserscategorie"
+
 import Home from "./components/admin/Home"
+import "@fortawesome/fontawesome-free/css/all.css";
+import Insertscategorie from "./components/admin/scategories/Insertscategorie"
 
 const App = () => {
   return (
@@ -27,7 +29,7 @@ const App = () => {
         <Route path="/categories/add" element={<Insertcategorie/>}/>
         <Route path="/categories/edit/:id" element={<Editcategorie />}/>
         <Route path="/scategories" element={<Listscategories   />}/>
-        <Route path="/scategories/add" element={<Inserscategorie/>}/>
+        <Route path="/scategories/add" element={<Insertscategorie/>}/>
         <Route path="/scategories/edit/:id" element={<Editscategorie />}/>
       </Routes>
 
